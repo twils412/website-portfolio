@@ -248,3 +248,67 @@ Portfolio Styling CSS
    text-decoration: none;
    color: white;
  }
+
+ /*
+ -----------------------------------------
+
+ Contact Form Styling CSS
+
+ -----------------------------------------
+  */
+
+  .contact-form {
+    padding: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .label-input {
+    display: block;
+  }
+
+  .reset input,
+  .submit input {
+    margin-top: 20px;
+    font-family: 'Acme', sans-serif;
+    color: black;
+    background-color: #edc7df;
+    border-radius: 6px;
+    padding: 10px;
+    max-width: 145px;
+    min-width: 145px;
+    text-align: center;
+    margin: 20px 30px;
+    border: 4px solid black;
+    text-decoration: none;
+    transition: .3s;
+  }
+
+  .reset,
+  .submit {
+    display: inline;
+  }
+
+  .reset:hover,
+  .submit:hover {
+    background-color: #6fc9c1;
+    transition: .3s;
+  }
+
+  .reset:active,
+  .submit:active {
+    background-color: #03adbf;
+  }
+
+  .input-section {
+    margin-bottom: 10px;
+  }
+
+  input {
+    padding: 5px 10px;
+    border-radius: 2px;
+  }
+
+  textarea {
+      font-family: 'Josefin Sans', sans-serif;
+      padding: 5px;
+  }
