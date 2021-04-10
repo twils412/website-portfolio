@@ -1,3 +1,6 @@
+<link type="text/css" rel="stylesheet" href="../css/styles.css"/>
+
+
 <header>
 
   <img class="logo" src="images/logo.png" alt="Tyler's logo">
@@ -18,6 +21,8 @@
   </nav>
 </header>
 
+<section class="content">
+
 <h1>Missing fields</h1>
 <p>Sorry, you have not completed all of the required fields.</p>
 <p>Please hit <a href="#" onClick="history.go(-1)">back</a> and complete the following required fields.</p>
@@ -33,5 +38,7 @@
 <p><strong><a href="#" onClick="history.go(-1)">Back to form</a></strong></p>
 
 <p>(Shoutout to <a href="http://www.inventpartners.com">Invent Partners Web Design York</a> for their handy form processing tool!</p>
+
+</section>
 
   <footer> <span class= "footer-style">Website by &nbsp;</span>Tyler Wilson</footer>

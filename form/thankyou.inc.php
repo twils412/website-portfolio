@@ -1,3 +1,6 @@
+<link type="text/css" rel="stylesheet" href="../css/styles.css"/>
+
+
 <header>
 
   <img class="logo" src="images/logo.png" alt="Tyler's logo">
@@ -18,10 +21,14 @@
   </nav>
 </header>
 
+<section class="content">
+
 <h1>Thank you for your enquiry</h1>
 <p>Thanks for your interest. we have received your message, and we will be in touch shortly.</p>
 <p>Form processor provided by <a href="http://www.inventpartners.com">Invent Partners web design York</a>.</p>
 
 <p>(Shoutout to <a href="http://www.inventpartners.com">Invent Partners Web Design York</a> for their handy form processing tool!</p>
+
+</section>
 
   <footer> <span class= "footer-style">Website by &nbsp;</span>Tyler Wilson</footer>

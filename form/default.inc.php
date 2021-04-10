@@ -1,3 +1,5 @@
+  <link type="text/css" rel="stylesheet" href="../css/styles.css"/>
+
 <header>
 
   <img class="logo" src="images/logo.png" alt="Tyler's logo">
@@ -18,9 +20,13 @@
   </nav>
 </header>
 
+<section class="content">
+
 <h1>My apologies...</h1>
 <p>It looks like something didn't process correctly. Please try your request again.</p>
 
 <p>(Shoutout to <a href="http://www.inventpartners.com">Invent Partners Web Design York</a> for their handy form processing tool!</p>
+
+</section>
 
   <footer> <span class= "footer-style">Website by &nbsp;</span>Tyler Wilson</footer>
