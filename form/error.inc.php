@@ -42,6 +42,11 @@ h2 {
   margin: 12px 0 30px;
 }
 
+a {
+	text-decoration: none;
+	color: #cce4b3;
+}
+
  .button {
   display: inline-block;
   margin-top: 100px;

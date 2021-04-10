@@ -42,6 +42,11 @@ h2 {
   margin: 12px 0 30px;
 }
 
+a {
+	text-decoration: none;
+	color: #cce4b3;
+}
+
  .button {
   display: inline-block;
   margin-top: 100px;
@@ -201,9 +206,8 @@ footer {
 
 <section class="content">
 
-<h1>Thank you for your enquiry</h1>
-<p>Thanks for your interest. we have received your message, and we will be in touch shortly.</p>
-<p>Form processor provided by <a href="http://www.inventpartners.com">Invent Partners web design York</a>.</p>
+<h1>Thank you for getting in touch!</h1>
+<p>I will do my best to get back to you as quickly as possible.</p>
 
 <p>(Shoutout to <a href="http://www.inventpartners.com">Invent Partners Web Design York</a> for their handy form processing tool!</p>
 
