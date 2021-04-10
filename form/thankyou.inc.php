@@ -2,7 +2,8 @@
 
 @font-face{
   font-family: 'Acme', sans-serif;
-  font-family: 'Josefin Sans', sans-serif;}
+  font-family: 'Josefin Sans', sans-serif;
+}
 
 * {
   border: 0;
@@ -23,7 +24,8 @@ h1 {
   font-family: 'Acme', sans-serif;
   text-align: center;
   font-size: 40px;
-  margin: 12px 0 30px; }
+  margin: 12px 0 30px;
+}
 
   header {
     background-color: #111111;
@@ -56,8 +58,8 @@ h1 {
   .footer-style {
     color: #7c5da7;
   }
-
 }
+
 </style>
 
 <header>
