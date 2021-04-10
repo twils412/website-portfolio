@@ -23,7 +23,7 @@ h1 {
   font-family: 'Acme', sans-serif;
   text-align: center;
   font-size: 40px;
-  margin: 12px 0 30px;
+  margin: 12px 0 30px; }
 
   header {
     background-color: #111111;
@@ -58,7 +58,7 @@ h1 {
   }
 
 }
-
+</style>
 
 <header>
 
