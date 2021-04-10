@@ -195,6 +195,10 @@ footer {
   </nav>
 </header>
 
+<main>
+
+
+
 <section class="content">
 
 <h1>My apologies...</h1>
@@ -203,5 +207,7 @@ footer {
 <p>(Shoutout to <a href="http://www.inventpartners.com">Invent Partners Web Design York</a> for their handy form processing tool!</p>
 
 </section>
+
+</main>
 
   <footer> <span class= "footer-style">Website by &nbsp;</span>Tyler Wilson</footer>

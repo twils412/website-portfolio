@@ -172,7 +172,7 @@ footer {
   margin: 5px 120px;
   display: inline-block;
   }
-  
+
 </style>
 
 <header>
@@ -195,6 +195,10 @@ footer {
   </nav>
 </header>
 
+<main>
+
+
+
 <section class="content">
 
 <h1>Thank you for your enquiry</h1>
@@ -204,5 +208,7 @@ footer {
 <p>(Shoutout to <a href="http://www.inventpartners.com">Invent Partners Web Design York</a> for their handy form processing tool!</p>
 
 </section>
+
+</main>
 
   <footer> <span class= "footer-style">Website by &nbsp;</span>Tyler Wilson</footer>

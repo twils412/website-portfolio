@@ -177,6 +177,10 @@ footer {
 
 <header>
 
+<main>
+
+
+
   <img class="logo" src="images/logo.png" alt="Tyler's logo">
 
   <nav class="menu">
@@ -214,5 +218,7 @@ footer {
 <p>(Shoutout to <a href="http://www.inventpartners.com">Invent Partners Web Design York</a> for their handy form processing tool!</p>
 
 </section>
+
+</main>
 
   <footer> <span class= "footer-style">Website by &nbsp;</span>Tyler Wilson</footer>
