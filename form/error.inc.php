@@ -182,10 +182,6 @@ footer {
 
 <header>
 
-<main>
-
-
-
   <img class="logo" src="images/logo.png" alt="Tyler's logo">
 
   <nav class="menu">
@@ -202,8 +198,11 @@ footer {
       <li class="menu-item"><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
+
 </header>
 
+<main>
+	
 <section class="content">
 
 <h1>Missing fields</h1>
