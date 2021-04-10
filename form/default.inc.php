@@ -18,5 +18,9 @@
   </nav>
 </header>
 
-<h1>Hello</h1>
-<p>Form processor by <a href="http://www.inventpartners.com">Invent Partners Web Design York</a>.</p>
+<h1>My apologies...</h1>
+<p>It looks like something didn't process correctly. Please try your request again.</p>
+
+<p>(Shoutout to <a href="http://www.inventpartners.com">Invent Partners Web Design York</a> for their handy form processing tool!</p>
+
+  <footer> <span class= "footer-style">Website by &nbsp;</span>Tyler Wilson</footer>

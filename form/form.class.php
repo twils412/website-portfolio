@@ -4,9 +4,9 @@
 
 	PHP form handler
 	v1.1
-	
+
 	This is probably the simplest form processor you could ever imagine.
-	
+
 	created by InventPartners Ltd http://www.inventpartners.com
 
 */
@@ -26,36 +26,36 @@ class Form{
 		$formdata = array() ,			// _POST and _GET data goes into the array
 		$required_fields = array() ,	// Required fields in form data
 		$missing_required_fields = array() ; // Missing required fields data
-		
+
 	function Form(){
-	
+
 		global $_SERVER;
-		
+
 		// Try to work out the correct includes path
 		$this->includes_path = 'form/';
 		$this->default_include = 'default.inc.php';
 		$this->thankyou_include = 'thankyou.inc.php';
 		$this->error_include = 'error.inc.php';
-		
+
 		$this->filter_spam = false;
 		$this->spam_threshold = 5;
-	
+
 	}
-	
+
 	// Call this function to run the form processor
 	function processForm($mail_domain , $site_name , $destination_email , $sender_email){
-		
+
 		$this->mail_domain = $mail_domain;
 		$this->site_name = $site_name;
 		$this->destination_email = $destination_email;
 		$this->sender_email = $sender_email;
-		
+
 		$this->input_accepted = 0;
-	
-		$this->required_fields = array();	
+
+		$this->required_fields = array();
 		$this->getInput($_GET);
 		$this->getInput($_POST);
-		
+
 		// Has a form submission been accepted?
 		if($this->input_accepted){
 			//Check required_fields
@@ -69,12 +69,12 @@ class Form{
 			}
 			// Has this form submission passed the required fields check?
 			if($passed){
-			
+
 				// Form submission has pased the required fields check
-				
-				// Check for spam - 
+
+				// Check for spam -
 				if($this->spamTrap()){
-				
+
 					// Send the notification email
 					$this->sendNotification();
 					// Display thank you message
@@ -85,19 +85,19 @@ class Form{
 						echo "<p>Can't find thank you message include.</p>";
 						echo '<p>Form processor by <a href="http://www.inventpartners.com">Invent Partners <strong>Web Design Wakefield</strong></a>.</p>';
 					}
-					
+
 				} else {
 					// Spam will return a 404 to the page, and be quietly binned.
 					header("HTTP/1.0 404 Not Found" , 1 , 1);
 					$this->sendNotification('SPAM ');
 					exit;
 				}
-			
+
 			} else {
-			
+
 				// Missing required field
 				// Error message goes here
-				
+
 				// Display error message
 				if(is_file($this->includes_path . $this->error_include)){
 					include($this->includes_path . $this->error_include);
@@ -106,13 +106,13 @@ class Form{
 					echo "<p>can't find error message include.</p>";
 					echo '<p>Form processor by <a href="http://www.inventpartners.com">Invent Partners <strong>Web Design Wakefield</strong></a>.</p>';
 				}
-			
+
 			}
 		} else {
-		
-			// No form submission to be had? 
+
+			// No form submission to be had?
 			// Blank message
-				
+
 			// Display blank message
 			if(is_file($this->includes_path . $this->default_include)){
 				include($this->includes_path . $this->default_include);
@@ -121,14 +121,14 @@ class Form{
 				echo "<p>can't find default message include.</p>";
 				echo '<p>Form processor by <a href="http://www.inventpartners.com">Invent Partners <strong>Web Design Wakefield</strong></a>.</p>';
 			}
-			
+
 		}
-	
+
 	}
-	
+
 	// Accept input data - send $_GET and $_POST to this data
 	function getInput($input_array){
-	
+
 		while(list($key , $value) = each($input_array)){
 			$this->input_accepted = 1;
 			if(substr($key , 0 , 4) == 'req_'){
@@ -139,10 +139,10 @@ class Form{
 				$value = stripslashes($value);
 			}
 			$this->formdata[$key] = $value;
-		}	
-		
+		}
+
 	}
-	
+
 	// Cehck valid email function
 	function checkValidEmail($string) {
 		if (preg_match("/^([a-zA-Z0-9\._-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/",$string)) {
@@ -151,15 +151,15 @@ class Form{
 			return false;
 		}
 	}
-	
+
 	// Send the form notification email
 	function sendNotification($prefix = ''){
-	
+
 		// Build notification content
 		$message = "The following enquiry has just been posted via the enquiry forms on " . $this->site_name .  "\n\n";
 		while(list($key , $value) = each($this->formdata)){
 			$message .= $key . ': ' . $value . "\n";
-		}	
+		}
 
 		// Are we changing the sender address
 		if($this->checkValidEmail($this->formdata['email'])){
@@ -167,23 +167,23 @@ class Form{
 		} else {
 			$sender_email = $this->sender_email;
 		}
-	
+
 		// Send the email
 		mail($this->destination_email , $prefix . 'Enquiry from ' . $this->site_name . ' website' , $message , 'From:' . $sender_email);
-		
+
 	}
-	
+
 	function spamTrap(){
-	
+
 		// Is spam filtering on?
 		if($this->filter_spam){
 			if(!$this->spam_threshold){
 				$this->spam_threshold = 5;
 			}
-			
+
 			// Check some junk indicators here
 			$spam_score = 0;
-			
+
 			// Check for session values as well?
 			// This eval here does not work, because the session has already been set!
 			//if(session_id()){
@@ -202,11 +202,11 @@ class Form{
 				return 0;
 			} else {
 				return 1;
-			}		
+			}
 		} else {
 			return 1;
 		}
-		
+
 	}
 
 }
