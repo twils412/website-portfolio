@@ -17,6 +17,11 @@ Universal Styling CSS
   box-sizing: border-box;
 }
 
+*::selection {
+  background-color: #6fc9c1;
+  color: black;
+}
+
 p {
   font-family: 'Josefin Sans', sans-serif;
   line-height: 25px;
@@ -288,14 +293,14 @@ Portfolio Styling CSS
     display: inline;
   }
 
-  .reset:hover,
-  .submit:hover {
+  .resetbackground:hover,
+  .submitbackground:hover {
     background-color: #6fc9c1;
     transition: .3s;
   }
 
-  .reset:active,
-  .submit:active {
+  .resetbackground:active,
+  .submitbackground:active {
     background-color: #03adbf;
   }
 
@@ -311,4 +316,17 @@ Portfolio Styling CSS
   textarea {
       font-family: 'Josefin Sans', sans-serif;
       padding: 5px;
+  }
+
+  .contact-page-p {
+    text-align: center;
+  }
+
+  p.contact-page-p::first-letter {
+    font-size: 40px;
+    font-family: cursive;
+  }
+
+  p.contact-page-p::after {
+    content: "Thank you!";
   }
