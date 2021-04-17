@@ -254,6 +254,27 @@ Portfolio Styling CSS
    color: white;
  }
 
+ .film-heading {
+   color: #cce4b3;
+ }
+
+ .writing-heading {
+   color: #edc7df;
+ }
+
+ .graphics-heading {
+   color: #a6aacc;
+ }
+
+ .writing-sample-name {
+   font-family: 'Acme', sans-serif;
+   font-size: 22px;
+   margin-left: 4px;
+ }
+
+.writing-sample-description {
+  margin-left: 181px;
+}
  /*
  -----------------------------------------
 
