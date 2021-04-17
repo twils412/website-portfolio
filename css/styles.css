@@ -330,3 +330,25 @@ Portfolio Styling CSS
   p.contact-page-p::after {
     content: "Thank you!";
   }
+
+  /*
+  -----------------------------------------
+
+  About Page Styling CSS
+
+  -----------------------------------------
+   */
+
+   .about-image {
+     border-radius: 50px;
+     min-width: 250px;
+     max-width: 250px;
+     margin: 0 auto;
+   }
+
+   .about-image-div {
+     padding-bottom: 20px;
+     max-width: 250px;
+     margin: 0 auto;
+
+   }
