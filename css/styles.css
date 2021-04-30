@@ -45,7 +45,7 @@ h2 {
   margin: 12px 0 30px;
 }
 
- .button {
+ .button, .button2 {
   display: inline-block;
   margin-top: 100px;
   font-family: 'Acme', sans-serif;
@@ -56,13 +56,17 @@ h2 {
   max-width: 145px;
   min-width: 145px;
   text-align: center;
-  margin: 100px 30px;
+  margin: 40px 12px;
   border: 4px solid black;
   text-decoration: none;
   transition: .3s;
  }
 
-.button:hover {
+ .button2 {
+   margin-left: 60px;
+ }
+
+.button:hover, .button2:hover {
   background-color: #6fc9c1;
   transition: .3s;
 }
@@ -153,7 +157,7 @@ footer {
 
 .menu > ul > li {
   display: inline-block;
-  width: 10%;
+  width: 8.1%;
   color: white;
   transition: .3s;
   margin-bottom: 1px;
@@ -199,18 +203,44 @@ Portfolio Styling CSS
 -----------------------------------------
  */
 
+
  .icon-button {
    /* consider doing a display: inline or display: inline-block */
    top: 25px;
-   text-decoration: none;
-   color: black;
-   border: 3px solid black;
-   background-color: white;
-   border-radius: 500px;
-   font-size: 125px;
-   padding: 40px;
-   position: relative;
-   margin: 0 53px;
+   max-width: 175px;
+   margin-left: 60px;
+ }
+
+
+ .icon-button:hover {
+   transition: .3s;
+   background-color: #cce4b3;
+ }
+
+ .icon-button-feather {
+   /* consider doing a display: inline or display: inline-block */
+   top: 25px;
+   max-width: 175px;
+   margin-left: 30px;
+ }
+
+ .icon-button-feather:hover {
+   transition: .3s;
+   background-color: #edc7df;
+ }
+
+
+ .icon-button-graphic {
+   /* consider doing a display: inline or display: inline-block */
+   top: 25px;
+   max-width: 175px;
+   margin-left: 30px;
+
+ }
+
+ .icon-button-graphic:hover {
+   transition: .3s;
+   background-color: #a6aacc;
  }
 
  .film-content {
@@ -244,15 +274,38 @@ Portfolio Styling CSS
    display: inline-block;
  }
 
- .icon-below-link {
-   margin-top: 100px;
+ .icon-below-link-camera,
+ .icon-below-link-feather,
+ .icon-below-link-graphic {
+   margin-top: 40px;
    font-family: 'Acme', sans-serif;
    font-size: 30px;
    display: block;
    text-align: center;
+   margin-left: 47px;
    text-decoration: none;
    color: white;
+   transition: .3s;
  }
+
+ .icon-below-link-camera:hover {
+   transition: .3s;
+   color: #cce4b3;
+ }
+
+ .icon-below-link-feather:hover {
+   transition: .3s;
+   color: #edc7df;
+ }
+
+ .icon-below-link-graphic:hover {
+   transition: .3s;
+   color: #a6aacc;
+ }
+
+.icon-sizing {
+  background: yellow;
+}
 
  .film-heading {
    color: #cce4b3;
@@ -269,7 +322,19 @@ Portfolio Styling CSS
  .writing-sample-name {
    font-family: 'Acme', sans-serif;
    font-size: 22px;
-   margin-left: 4px;
+   margin-left: 14px;
+   text-decoration: none;
+   color: #cce4b3;
+   transition: .3s;
+ }
+
+ .writing-sample-name:hover {
+   transition: .3s;
+   color: #edc7df;
+ }
+
+ .writing-sample-name:active {
+   color: #03adbf;
  }
 
 .writing-sample-description {
@@ -345,6 +410,11 @@ Portfolio Styling CSS
 
 .flip-card-edge2 {
   margin-left: 164px;
+}
+
+.portfolio-download {
+  text-decoration: none;
+  display: inline-block;
 }
  /*
  -----------------------------------------
@@ -485,7 +555,7 @@ Portfolio Styling CSS
   }
 
   .blog-link {
-    color: white;
+    color: #03adbf;
     transition: .3s;
   }
 
@@ -496,5 +566,4 @@ Portfolio Styling CSS
 
   .blog-link:active {
     color: #03adbf;
-    transition: .3s;
   }
